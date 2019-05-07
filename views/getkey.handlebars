@@ -1,0 +1,8 @@
+<h1>Search for Key</h1>
+{{#if error}} <span>{{error}}</span>{{/if}}
+<form class="form-inline" method="POST" action="/key/get">
+  <div class="form-group">
+    <input type="text" name="key" class="form-control" placeholder="Find Value for Key">
+  </div>
+  <input type="submit" class="btn btn-primary" value="Search">
+</form>

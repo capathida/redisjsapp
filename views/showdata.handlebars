@@ -1,0 +1,9 @@
+<h1>Result for {{data.key}}</h1>
+<ul class="list-group">
+  <li class="list-group-item"><strong>Value: </strong>{{data.container}}</li>
+  <li class="list-group-item"><strong>Tot: </strong>{{data}}</li>
+</ul>
+<a class="btn btn-default pull-left" href="/">Back</a>
+<form method="POST" action="/data/delete/{{data.key}}?_method=DELETE">
+  <input type="submit" class="btn btn-danger pull-right" value="Delete">
+</form>

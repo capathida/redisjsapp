@@ -1,0 +1,13 @@
+<h1>Add Key-Value</h1>
+{{#if error}} <span>{{error}}</span>{{/if}}
+<form method="POST" action="/data/add">
+  <div class="form-group">
+    <label>Key</label>
+    <input type="text" name="key" class="form-control" placeholder="Key">
+  </div>
+  <div class="form-group">
+    <label>Value</label>
+    <input type="text" name="value" class="form-control" placeholder="Value">
+  </div>
+  <input type="submit" class="btn btn-primary" value="Save">
+ </form>
